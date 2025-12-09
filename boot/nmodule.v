@@ -274,6 +274,10 @@ HB.mixin Record hasZero V := {
   zero : V
 }.
 
+#[short(type="zPointedType")]
+HB.structure Definition ZPointed :=
+  {V of hasZero V}.
+
 #[short(type="baseAddUMagmaType")]
 HB.structure Definition BaseAddUMagma :=
   {V of hasZero V & BaseAddMagma V}.
